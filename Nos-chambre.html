@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="Nos-chambre.css">
     <script src="https://kit.fontawesome.com/08027f6dca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="nav-bar">
-            <nav class="nav">
-                <button class="btn acceuil"> <a href="#"> Acceuil </a> </button>
-                <button class="btn chambre"> <a href="#"> Chambre </a></button>
-                <button class="btn activites"> <a href="#"> Activites </a></button>
-                <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
-            </nav>
-            <div class="stars">
-                ★ ★ ★ ★ ★
+        <div class="Header">
+            <div class="nav-bar">
+                <nav class="nav">
+                    <button class="btn acceuil"> <a href="#"> Acceuil </a> </button>
+                    <button class="btn chambre"> <a href="#"> Chambre </a></button>
+                    <button class="btn activites"> <a href="#"> Activites </a></button>
+                    <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
+                </nav>
+                <div class="stars">
+                    ★ ★ ★ ★ ★
+                </div>
             </div>
+            <div class="logo">
+                <img src="img/logo figma.png">
+            </div>
+            <h1>Hotel D&N Africa United</h1>
         </div>
-        <div class="logo">
-            <img src="img/logo figma.png">
-        </div>
-        <h1>Hotel D&N Africa United</h1>
+        
+
     </header>
     <main>
         <div class="search">
@@ -148,7 +150,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -168,7 +170,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -188,7 +190,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -208,7 +210,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -228,7 +230,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -248,7 +250,7 @@
                             <p>salle de bain</p>
                             <p>terasse</p>
                         </div>
-                        <div class="star">
+                        <div class="star-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -266,8 +268,8 @@
         <div class="Footer">
             <div class="reglement">
                 <div class="paiement">
-                    <h5>Moyen de paiement</h5> 
-                    <hr class="Trait-paiement">              
+                    <h6>Moyen de paiement</h6>
+                    <hr class="Trait-paiement">
                     <div class="card">
                         <img src="img/mastercard-full-svgrepo-com.svg">
                         <img src="img/visa-3-svgrepo-com.svg">
@@ -275,45 +277,72 @@
                         <img src="img/paypal-svgrepo-com.svg">
                     </div>
                 </div>
-                <h6>Nous contacter</h6>
                 <div class="social">
-                    <div>
-                        <img src="img/pinterest-color-svgrepo-com.svg">
-                        <p>pinterest</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/pinterest-color-svgrepo-com.svg">
+                            <p>pinterest</p>
+                        </a>
                     </div>
-                    <div>
-                        <img src="img/meta-svgrepo-com.svg">
-                        <p>meta</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/meta-svgrepo-com.svg">
+                            <p>meta</p>
+                        </a>
                     </div>
-                    <div>
-                        <img src="img/instagram-2-1-logo-svgrepo-com.svg">
-                        <p>instagram</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/instagram-2-1-logo-svgrepo-com.svg">
+                            <p>instagram</p>
+                        </a>
                     </div>
                 </div>
                 <div class="contact">
                     <div class="enbas">
-                        <p> nous contacter</p>
+                        <a href="#">Nous contacter</a>
                     </div>
                     <div class="enbas">
-                        <p>mention legales</p>
+                        <a href="#">Mentions légales et CGU</a>
                     </div>
                     <div class="enbas">
-                        <p>tous droits reserver</p>
+                        <a href="#">Tous droits reserver</a>
                     </div>
                 </div>
             </div>
             <div class="Nos-hotel">
-                <h7>Nos Hôtels</h7>
+                <div class="text-hotel">
+                    <img src="img/hotel.svg" alt="imh hôtel">
+                    <h7>Nos Hôtels</h7>
+                </div>
                 <div id="map"></div>
-            </div>          
+            </div>
         </div>
 
-       
+
 
     </footer>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var locations = [
+            { lat: 33.830132, lon: 10.869262 },
+            { lat: 33.726475, lon: 10.741845 },
+            { lat: 33.707424, lon: 10.757585 },
+            { lat: 33.724437, lon: 10.843285 },
+            { lat: 33.775580, lon: 11.040320 },
+            // Ajoutez autant de coordonnées que vous le souhaitez
+        ];
+
+        var map = L.map('map').setView([33.80677398124305, 10.880648587112974], 10.2);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        locations.forEach(function (location) {
+            L.marker([location.lat, location.lon]).addTo(map);
+        });
+    </script>
+
 </body>
 
 </html>
