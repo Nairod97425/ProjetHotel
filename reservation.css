@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Just Me Again Down Her';
+}
+
+/*header*/
+
+
+header {
+    background-image: linear-gradient(to right, blue, white);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    border-radius: 25px;
+    width: 138px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(131, 131, 207);
+    padding: 10px;
+    margin: 10px;
+}
+
+.stars {
+    color: gold;
+}
+
+/*footer*/
+
+footer {
+    top: -5px;
+    /* Ajustez cette valeur pour déplacer l'ombre */
+    left: -1px;
+    right: -1px;
+    height: 10px;
+    /* Ajustez cette valeur pour contrôler la hauteur de l'ombre */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.reglement {
+    width: 64vw;
+}
+
+h5 {
+    margin: 0;
+}
+
+.Trait-paiement {
+    width: 17vw;
+    margin: 10px 0;
+    height: 2px;
+    background-color: black;
+}
+
+.paiement {
+    display: flex;
+    font-size: 35px;
+    background-color: #D9D9D9;
+    width: 786px;
+    height: 195px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+h6 {
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: cursive;
+    text-align: center;
+}
+
+.social img {
+    width: 2vw;
+    height: 2vw;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+}
+
+.enbas {
+    margin-left: 20%;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card img {
+    width: 68px;
+    height: 68px;
+    padding: 25px;
+}
+
+div#map {
+    width: 363px;
+    height: 308px;
+    position: relative;
+}

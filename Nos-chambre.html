@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Nos-chambre.css">
+    <script src="https://kit.fontawesome.com/08027f6dca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <nav class="nav">
+                <button class="btn acceuil"> <a href="#"> Acceuil </a> </button>
+                <button class="btn chambre"> <a href="#"> Chambre </a></button>
+                <button class="btn activites"> <a href="#"> Activites </a></button>
+                <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
+            </nav>
+            <div class="stars">
+                ★ ★ ★ ★ ★
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/logo figma.png">
+        </div>
+        <h1>Hotel D&N Africa United</h1>
+    </header>
+    <main>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Search....">
+            <button class="search__button">
+                <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <hr class="Trait">
+        <div class="image__main">
+            <img src="img/img porte hotel2.webp" alt="">
+        </div>
+        <div class="bloc-chambre">
+            <div class="best-suite">
+                <div class="tritre-suite">
+                    <h2>Best suite</h2>
+                    <hr class="Trait-suite">
+                </div>
+                <div class="suite">
+                    <img class="img-suite" src="img/img chambre1.jpg" alt="chambre1">
+                    <h3>Chambre Supérieur</h3>
+                    <div class="suite-plus">
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suite">
+                    <img class="img-suite" src="img/img chambre1.jpg" alt="chambre1">
+                    <h3>Chambre Supérieur</h3>
+                    <div class="suite-plus">
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suite">
+                    <img class="img-suite" src="img/img chambre1.jpg" alt="chambre1">
+                    <h3>Chambre Supérieur</h3>
+                    <div class="suite-plus">
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suite">
+                    <img class="img-suite" src="img/img chambre1.jpg" alt="chambre1">
+                    <h3>Chambre Supérieur</h3>
+                    <div class="suite-plus">
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Nos-chambres">
+                <div class="tirre-chambre">
+                    <h4>Nos Chambres</h4>
+                    <hr class="Trait-chambre">
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Chambres">
+                    <img src="img/img chambre 5.jpg" alt="">
+                    <div class="info-chambre">
+                        <h5>suite executive</h5>
+                        <div class="parag">
+                            <p>2 adultes</p>
+                            <p>salle de bain</p>
+                            <p>terasse</p>
+                        </div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <div class="star__on">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="Footer">
+            <div class="reglement">
+                <div class="paiement">
+                    <h5>Moyen de paiement</h5> 
+                    <hr class="Trait-paiement">              
+                    <div class="card">
+                        <img src="img/mastercard-full-svgrepo-com.svg">
+                        <img src="img/visa-3-svgrepo-com.svg">
+                        <img src="img/american-express-svgrepo-com.svg">
+                        <img src="img/paypal-svgrepo-com.svg">
+                    </div>
+                </div>
+                <h6>Nous contacter</h6>
+                <div class="social">
+                    <div>
+                        <img src="img/pinterest-color-svgrepo-com.svg">
+                        <p>pinterest</p>
+                    </div>
+                    <div>
+                        <img src="img/meta-svgrepo-com.svg">
+                        <p>meta</p>
+                    </div>
+                    <div>
+                        <img src="img/instagram-2-1-logo-svgrepo-com.svg">
+                        <p>instagram</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="enbas">
+                        <p> nous contacter</p>
+                    </div>
+                    <div class="enbas">
+                        <p>mention legales</p>
+                    </div>
+                    <div class="enbas">
+                        <p>tous droits reserver</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Nos-hotel">
+                <h7>Nos Hôtels</h7>
+                <div id="map"></div>
+            </div>          
+        </div>
+
+       
+
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""></script>
+</body>
+
+</html>
