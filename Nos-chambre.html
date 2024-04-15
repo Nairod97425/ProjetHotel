@@ -8,29 +8,28 @@
     <link rel="stylesheet" href="Nos-chambre.css">
     <script src="https://kit.fontawesome.com/08027f6dca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    
 </head>
 
 <body>
     <header>
-        <div class="Header">
-            <div class="nav-bar">
-                <nav class="nav">
-                    <button class="btn acceuil"> <a href="#"> Acceuil </a> </button>
-                    <button class="btn chambre"> <a href="#"> Chambre </a></button>
-                    <button class="btn activites"> <a href="#"> Activites </a></button>
-                    <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
-                </nav>
-                <div class="stars">
-                    ★ ★ ★ ★ ★
-                </div>
+        <div class="nav-bar">
+            <label for="toggle">☰</label>
+            <input class="toggle" type="checkbox" id="toggle">
+            <nav class="nav">
+                <button class="btn acceuil"> <a href="index.html"> Acceuil </a> </button>
+                <button class="btn chambre"> <a href="Nos-chambre.html"> Chambre </a></button>
+                <button class="btn activites"> <a href="activites.html"> Activites </a></button>
+                <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
+            </nav>
+            <div class="stars">
+                ★ ★ ★ ★ ★
             </div>
-            <div class="logo">
-                <img src="img/logo figma.png">
-            </div>
-            <h1>Hotel D&N Africa United</h1>
         </div>
-        
-
+        <div class="logo">
+            <img src="img/logo figma.png">
+        </div>
+        <h1>Hotel D&N Africa United</h1>
     </header>
     <main>
         <div class="search">
@@ -144,7 +143,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Executive</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -164,7 +163,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Deluxe</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -184,7 +183,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Executive</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -204,7 +203,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Premium</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -224,7 +223,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Deluxe</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -244,7 +243,7 @@
                 <div class="Chambres">
                     <img src="img/img chambre 5.jpg" alt="">
                     <div class="info-chambre">
-                        <h5>suite executive</h5>
+                        <h5>Suite Premium</h5>
                         <div class="parag">
                             <p>2 adultes</p>
                             <p>salle de bain</p>
@@ -317,32 +316,9 @@
                 <div id="map"></div>
             </div>
         </div>
-
-
-
     </footer>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-        var locations = [
-            { lat: 33.830132, lon: 10.869262 },
-            { lat: 33.726475, lon: 10.741845 },
-            { lat: 33.707424, lon: 10.757585 },
-            { lat: 33.724437, lon: 10.843285 },
-            { lat: 33.775580, lon: 11.040320 },
-            // Ajoutez autant de coordonnées que vous le souhaitez
-        ];
-
-        var map = L.map('map').setView([33.80677398124305, 10.880648587112974], 10.2);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        locations.forEach(function (location) {
-            L.marker([location.lat, location.lon]).addTo(map);
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

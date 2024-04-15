@@ -1,19 +1,16 @@
 @font-face {
-    font-family: "JustMe" ;
+    font-family: "JustMe";
     src: url(JustMeAgainDownHere-Regular.ttf);
 }
 
 body {
     margin: 0;
-    font-family: "JustMe" ;
+    font-family: "JustMe";
 }
 
-
-a{
+a {
     text-decoration: none;
 }
-
-
 
 /*header*/
 
@@ -72,14 +69,6 @@ h1 {
 
 @media (max-width: 431px) {
 
-    body{
-        border: 1px solid red;
-    }
-
-    .date-de-reservation {
-        width: auto;
-    }
-
     .nav-bar {
         height: 60px;
         margin: 0 10px;
@@ -130,14 +119,22 @@ h1 {
         font-size: 32px;
     }
 
+
+
 }
 
-/* main */
+/*main*/
 
 .search {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:730px) {
+    .search {
+        padding: 1em;
+    }
 }
 
 .search__input {
@@ -195,196 +192,144 @@ h1 {
     fill: #000000;
 }
 
-.image__main {
-    display: flex;
-    justify-content: center;
+
+
+label,
+#toggle {
+    display: none;
 }
 
-.image__main img {
-    width: 70%;
-    height: 300px;
-}
+@media screen and (max-width:730px) {
+    .Trait {
+        width: 16em;
+    }
 
-.bloc-chambre {
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px;
-}
+    .nav {
+        display: none;
+    }
 
-.best-suite {
-    width: 22%;
-    background: #D9D9D9;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    label {
+        width: 40px;
+        display: flex;
 
-.suite {
-    background-color: white;
-    border-radius: 25px;
-    margin: 0px 10px 15px 10px;
-}
+        font-size: 40px;
+        color: rgb(10, 3, 3);
+        cursor: pointer;
 
-.img-suite {
-    margin: 5px;
-    border-radius: 25px;
-}
+    }
 
-.tritre-suite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    #toggle:checked+.nav {
+        display: flex;
+        padding: 0.5rem;
+        border: 1px solid black;
+        flex-direction: column;
 
-h2 {
-    font-size: 28px;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
+    }
 
-hr.Trait-suite {
-    background: black;
-    height: 2px;
-    width: 121px;
-    margin-top: 0;
 }
 
 h3 {
+    text-align: center;
+    font-size: 40px;
+
+    margin-bottom: 0%
+}
+
+.traitact {
+    width: 20%;
+    margin-top: 0;
+    height: 2px;
+    background-color: #000000;
+
+}
+
+.activite {
+
+    background-color: #D9D9D9;
+    width: 70%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-.parag {
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (max-width:730px) {
+    .activite {
+        width: auto;
+        margin: 5%;
+    }
+    
+    .texteact p {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 15PX;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    hr.traitact {
+        width: 44%;
+    }
 }
 
-.star {
-    display: flex;
-    align-items: center;   
-    margin: -9px 0 10px 30px; 
-}
-
-i.fas.fa-star {
-    color: gold;
-    font-size: 13px;
-    padding: 3px;
-}
-
-.Chambres {
-    background-color: white;
-    border-radius: 25px;
-    width: 92%;
-    height: 15%;
+.chameau {
     display: flex;
     flex-direction: row;
-    margin: 10px;
 }
 
-.Nos-chambres {
-    width: 75%;
-    border-radius: 25px;
-    background-color: #D9D9D9;
-    margin: 0 0 0 32px;
+
+.chameau img {
+
+    width: 50%;
+
+
+}
+
+.texteact {
+    margin: 0 50px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
 }
 
-.Nos-chambres img {
-    border-radius: 25px;
-    margin: 7px;
+@media screen and (max-width:730px) {
+
+    .texteact {
+        margin: 0 3px 0 16px;
+    }
+
+
+
 }
 
-.info-chambre {
+.quad {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 500px;
+    flex-direction: row-reverse;
+
 }
 
-.Trait-chambre{
-    width: 11em;
-    height: 2px;
-    background-color: black;
-    margin-top: 1px;
+.quad img {
+    width: 50%;
 }
 
-.tirre-chambre {
+.piscine {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-h4 {
-    font-size: 28px;
-    margin-bottom: 0;
-    margin-top: 10px;
+.piscine img {
+    width: 50%;
 }
 
-h5 {
-    font-size: 25px;
-    margin: 0;
-}
-
-@media (max-width:431px){
-    input.search__input {
-        width: 19em;
-    }
-
-    .Trait {
-        width: 23em;
-        height: 1px;
-        margin-top: 1em;
-    }
-
-    .image__main img {
-        width: 86%;
-        height: 141px;
-    }
-
-    .bloc-chambre {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .best-suite {
-        width: 99%;
-        border-radius: 10px;
-    }
-
-    .Nos-chambres {
-        width: 99%;
-        margin: 10px 0;
-    }
-
-    .Chambres {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info-chambre .parag {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .info-chambre {
-        width: 100%;
-    }
-
-    .star-2 {
-        display: flex;
-        align-items: center;
-        margin: 0 0 0 46px;
-    }
-
-    h5 {
-        margin: 0 0 0 53px;
-    }
-}
 
 /*footer*/
 

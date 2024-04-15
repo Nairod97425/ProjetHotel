@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="reservation.css">
     <script src="https://kit.fontawesome.com/08027f6dca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="nav-bar">
+            <label for="toggle">☰</label>
+            <input class="toggle" type="checkbox" id="toggle">
             <nav class="nav">
-                <button class="btn acceuil"> <a href="#"> Acceuil </a> </button>
+                <button class="btn acceuil"> <a href="index.html"> Acceuil </a> </button>
                 <button class="btn chambre"> <a href="Nos-chambre.html"> Chambre </a></button>
-                <button class="btn activites"> <a href="#"> Activites </a></button>
-                <button class="btn reservation"> <a href="#"> Reservation </a></button>
+                <button class="btn activites"> <a href="activites.html"> Activites </a></button>
+                <button class="btn reservation"> <a href="reservation.html"> Reservation </a></button>
             </nav>
             <div class="stars">
                 ★ ★ ★ ★ ★
@@ -32,17 +32,73 @@
     </header>
     <main>
         <div class="bloc-reservation">
-            <div class="info-reservation">
+            <div class="date-de-reservation">
+                <div class="bloc-date">
+                    <div class="date-d'arriver">
+                        <label for="start">Start date:</label>
+                        <input type="date" id="partyDate" name="trip-start" max="2030-12-31" />
+                    </div>
+                    <div class="date-depart">
+                        <label for="End">End date:</label>
+                        <input type="date" id="End" name="trip-start" max="2050-12-31" />
+                    </div>
+                </div>
+                <div class="bloc-date2">
+                    <div class="chambre-choisi">
+                        <label for="chambre">Chambre:</label>
+                        <select id="activites">
+                            <option disabled selected value="chambre">Chambre choisie</option>
+                            <option value="premium">Formule Premium</option>
+                            <option value="confort">Formule Confort</option>
+                            <option value="deluxe">Formule Deluxe</option>
+                        </select>
+                    </div>
+                    <div class="activites">
+                        <label for="Activitée-choisi">Activitées:</label>
+                        <select id="activites">
+                            <option disabled selected value="chambre">Activitée choisie</option>
+                            <option value="fcomplet">Formule Complet</option>
+                            <option value="fconfort">Formule Confort</option>
+                            <option value="fdeluxe">Formule Deluxe</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="location">
+                    <div class="date-d'arriver">
+                        <label for="start2">Start date:</label>
+                        <input type="date" id="partyDate2" name="trip-start" max="2030-12-31" />
+                    </div>
+                    <div class="date-depart">
+                        <label for="End">End date:</label>
+                        <input type="date" id="End2" name="trip-start" max="2050-12-31" />
+                    </div>
+                </div>
             </div>
+            <div class="paiement-reser">
+                <h5>Moyen de paiement:</h5>
+
+                <div class="card-reser">
+                    <img src="img/mastercard-full-svgrepo-com.svg">
+                    <img src="img/visa-3-svgrepo-com.svg">
+                    <img src="img/american-express-svgrepo-com.svg">
+                    <img src="img/paypal-svgrepo-com.svg">
+                </div>
+            </div>
+            <div class="regler">
+                <a href="#">Régler</a>
+            </div>
+        </div>
+        <div class="img-reservation">
+            <img src="img/img porte hotel2.webp" alt="">
         </div>
     </main>
     <footer>
         <div class="Footer">
             <div class="reglement">
                 <div class="paiement">
-                    <h5>Moyen de paiement</h5> 
-                    <hr class="Trait-paiement">              
+                    <h6>Moyen de paiement</h6>
+                    <hr class="Trait-paiement">
                     <div class="card">
                         <img src="img/mastercard-full-svgrepo-com.svg">
                         <img src="img/visa-3-svgrepo-com.svg">
@@ -50,45 +106,49 @@
                         <img src="img/paypal-svgrepo-com.svg">
                     </div>
                 </div>
-                <h6>Nous contacter</h6>
                 <div class="social">
-                    <div>
-                        <img src="img/pinterest-color-svgrepo-com.svg">
-                        <p>pinterest</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/pinterest-color-svgrepo-com.svg">
+                            <p>pinterest</p>
+                        </a>
                     </div>
-                    <div>
-                        <img src="img/meta-svgrepo-com.svg">
-                        <p>meta</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/meta-svgrepo-com.svg">
+                            <p>meta</p>
+                        </a>
                     </div>
-                    <div>
-                        <img src="img/instagram-2-1-logo-svgrepo-com.svg">
-                        <p>instagram</p>
+                    <div class="info-social">
+                        <a href="#">
+                            <img src="img/instagram-2-1-logo-svgrepo-com.svg">
+                            <p>instagram</p>
+                        </a>
                     </div>
                 </div>
                 <div class="contact">
                     <div class="enbas">
-                        <p> nous contacter</p>
+                        <a href="#">Nous contacter</a>
                     </div>
                     <div class="enbas">
-                        <p>mention legales</p>
+                        <a href="#">Mentions légales et CGU</a>
                     </div>
                     <div class="enbas">
-                        <p>tous droits reserver</p>
+                        <a href="#">Tous droits reserver</a>
                     </div>
                 </div>
             </div>
             <div class="Nos-hotel">
-                <h7>Nos Hôtels</h7>
+                <div class="text-hotel">
+                    <img src="img/hotel.svg" alt="imh hôtel">
+                    <h7>Nos Hôtels</h7>
+                </div>
                 <div id="map"></div>
-            </div>          
-        </div>
-
-    
-
+            </div>
     </footer>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
