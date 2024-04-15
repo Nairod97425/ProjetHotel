@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "JustMe" ;
+  font-family: "JustMe";
   src: url(JustMeAgainDownHere-Regular.ttf);
 }
 
 body {
   margin: 0;
-  font-family: "JustMe" ;
+  font-family: "JustMe";
 }
 
 a {
@@ -61,68 +61,64 @@ h1 {
   color: gold;
 }
 
-.nav-bar label, .toggle{
+.nav-bar label,
+.toggle {
   display: none;
 }
 
 @media (max-width: 431px) {
 
- body{
-  border: 1px solid red;
- }
- .nav-bar
- {
-     height: 60px;
-     margin: 0 10px;
- }
+  .nav-bar {
+    height: 60px;
+    margin: 0 10px;
+  }
 
- .nav 
- {
-     display: none;
-     flex-direction: column;
-     background-color: rgba(24, 23, 23, 0.199);
-     position: absolute;
-     z-index: 2;
-     width: 40%;
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(24, 23, 23, 0.199);
+    position: absolute;
+    z-index: 2;
+    width: 40%;
 
- }
+  }
 
- .nav a {
-  width: 100%;
-  padding: 10px 0px 10px 0;
-}
+  .nav a {
+    width: 100%;
+    padding: 10px 0px 10px 0;
+  }
 
 
- .nav-bar label {
-  display: flex;
-  margin: 5px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-  background: rgba(0, 0, 255, 0.605);
-  height: auto;
-  width: 40px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-  
+  .nav-bar label {
+    display: flex;
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 255, 0.605);
+    height: auto;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
 
-  .nav-bar .toggle:checked + .nav {
-      display: flex;
-      padding: 0.5rem;
-      margin-right: 57px;
+
+  .nav-bar .toggle:checked+.nav {
+    display: flex;
+    padding: 0.5rem;
+    margin-right: 57px;
   }
 
   .logo img {
-      width: 100px;
+    width: 100px;
   }
 
   h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
-  
-  
+
+
 
 }
 
@@ -131,34 +127,44 @@ h1 {
 .porte {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 7%;
+  margin: 21px 248px;
 }
 
 .paragraph {
   background-color: rgb(246, 243, 240);
-
   text-align: center;
   font-family: cursive;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 25px 245px;
+  padding: 40px 38px;
 }
 
 @media screen and (max-width: 730px) {
   .porte {
     width: 350px;
+    margin: 9%;
   }
+
   .paragraph {
-    width: 430px;
+    margin: 15px 19px;
+    padding: 11px 10px;
   }
+
   .search__input {
     width: 18em;
   }
+
+}
+
+.desert {
+  display: flex;
+  justify-content: center;
 }
 
 .chameau {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30%;
+  width: 600px;
 }
 
 .principal {
@@ -176,6 +182,7 @@ h1 {
   flex-direction: column;
   border-radius: 40%;
 }
+
 .texte {
   margin-left: 300px;
   border-radius: 25px;
@@ -196,32 +203,43 @@ li {
 }
 
 @media screen and (max-width: 730px) {
-  .chameau {
-    width: 430px;
-    margin: 0;
-  }
-  .principal .texte {
-    margin: 0;
-    font-size: 15px;
-    padding-bottom: 0;
-  }
 
-  .principal h2 {
-    color: white;
-  }
   .principal .deuximages {
     width: 50%;
   }
+
+  .chameau {
+    width: 400px;
+    margin: 0 0;
+  }
+
+  .texte {
+    margin: 0;
+    font-size: 9px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    height: 289px;
+  }
+
+  h2 {
+    color: white;
+    margin: 0px 35px;
+}
 }
 
 .imageUN {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
 .imageDX {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+
 .secondaire {
   display: flex;
   align-items: center;
@@ -229,6 +247,8 @@ li {
   width: 80%;
   margin-left: 8%;
   margin-top: 5%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
 .deuxiemeIMAGE {
@@ -236,24 +256,72 @@ li {
   flex-direction: column;
   width: 40%;
 }
+
 .Hotel {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
 .sweet {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.deuxiemetexte {
+  padding: 0 36px;
+}
+
+h8 {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 730px) {
   .secondaire {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
 
   .trait {
     width: 300px;
   }
+
+  .deuxiemeIMAGE {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.Hotel {
+  width: 50%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+}
+.sweet {
+  width: 50%;
+  height: auto;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+}
+
+section.deuxieme {
+  display: flex;
+  justify-content: center;
+  margin: 19px 0;
+}
+
+.imageUN {
+  width: 172px;
+}
+
+.imageDX {
+  width: 172px;
+}
 }
 
 
@@ -317,7 +385,7 @@ h6 {
   align-items: center;
 }
 
-.info-social a p{
+.info-social a p {
   color: #000000;
   margin-left: 11px;
 }
@@ -373,32 +441,53 @@ div#map {
   height: auto;
 }
 
-.contact-mobile{
+.contact-mobile {
   display: none;
 }
-@media (max-width: 431px){
+
+@media (max-width: 431px) {
   .Footer {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .paiement{
-      width: 346px;
-      height: auto;
+  .paiement {
+    width: 346px;
+    height: auto;
   }
 
   h6 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .Trait-paiement {
-      width: 24vw;
-      height: 1px;
+    width: 24vw;
+    height: 1px;
   }
 
   .card img {
-      width: 38px;
-      height: 39px;
-      padding: 13px;
+    width: 38px;
+    height: 39px;
+    padding: 13px;
+  }
+
+  .reglement {
+    width: 84vw;
+  }
+
+  .Nos-hotel {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  div#map {
+    width: 400px;
+    height: 290px;
+    margin-bottom: 35px;
+  }
+
+  footer {
+    height: 599px;
   }
 }

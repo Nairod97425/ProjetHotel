@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "JustMe" ;
+    font-family: "JustMe";
     src: url(JustMeAgainDownHere-Regular.ttf);
 }
 
 body {
     margin: 0;
-    font-family: "JustMe" ;
+    font-family: "JustMe";
 }
 
 a {
@@ -62,54 +62,50 @@ h1 {
     color: gold;
 }
 
-.nav-bar label, .toggle{
+.nav-bar label,
+.toggle {
     display: none;
 }
 
 @media (max-width: 431px) {
 
-   body{
-    border: 1px solid red;
-   }
-   .nav-bar
-   {
-       height: 60px;
-       margin: 0 10px;
-   }
+    .nav-bar {
+        height: 60px;
+        margin: 0 10px;
+    }
 
-   .nav 
-   {
-       display: none;
-       flex-direction: column;
-       background-color: rgba(24, 23, 23, 0.199);
-       position: absolute;
-       z-index: 2;
-       width: 40%;
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(24, 23, 23, 0.199);
+        position: absolute;
+        z-index: 2;
+        width: 40%;
 
-   }
+    }
 
-   .nav a {
-    width: 100%;
-    padding: 10px 0px 10px 0;
-}
+    .nav a {
+        width: 100%;
+        padding: 10px 0px 10px 0;
+    }
 
 
-   .nav-bar label {
-    display: flex;
-    margin: 5px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    background: rgba(0, 0, 255, 0.605);
-    height: auto;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-    
- 
-    .nav-bar .toggle:checked + .nav {
+    .nav-bar label {
+        display: flex;
+        margin: 5px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        background: rgba(0, 0, 255, 0.605);
+        height: auto;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+
+    .nav-bar .toggle:checked+.nav {
         display: flex;
         padding: 0.5rem;
         margin-right: 57px;
@@ -122,8 +118,8 @@ h1 {
     h1 {
         font-size: 32px;
     }
-    
-    
+
+
 
 }
 
@@ -135,10 +131,10 @@ h1 {
     align-items: center;
 }
 
-@media screen and (max-width:730px){
-.search{
-    padding: 5em;
-}
+@media screen and (max-width:730px) {
+    .search {
+        padding: 1em;
+    }
 }
 
 .search__input {
@@ -160,6 +156,7 @@ h1 {
     background-color: black;
     margin-top: 2em;
 }
+
 .search__input:hover,
 .search__input:focus {
     box-shadow: 0 0 1em #00000013;
@@ -201,98 +198,91 @@ label,
 #toggle {
     display: none;
 }
-    
-@media screen and (max-width:730px){
-    .Trait{
-        width: 16em;}
 
-        .nav {
-            display:none;
-        }
-      
-        label {
-                width: 40px;
-                display: flex;
-            
-                font-size: 40px;
-                color: rgb(10, 3, 3);
-                cursor: pointer;
-            
-            }
-        
-            #toggle:checked+.nav {
-                display: flex;
-                padding: 0.5rem;
-                border: 1px solid black;
-                flex-direction: column;
-
-            }
-           
+@media screen and (max-width:730px) {
+    .Trait {
+        width: 16em;
     }
 
+    .nav {
+        display: none;
+    }
 
-    
+    label {
+        width: 40px;
+        display: flex;
 
+        font-size: 40px;
+        color: rgb(10, 3, 3);
+        cursor: pointer;
 
+    }
 
+    #toggle:checked+.nav {
+        display: flex;
+        padding: 0.5rem;
+        border: 1px solid black;
+        flex-direction: column;
 
+    }
 
-h3{
-     text-align: center;
+}
+
+h3 {
+    text-align: center;
     font-size: 40px;
-   
+
     margin-bottom: 0%
 }
 
-.traitact{
-    width:20%;
+.traitact {
+    width: 20%;
     margin-top: 0;
     height: 2px;
     background-color: #000000;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .activite {
 
-background-color:#D9D9D9 ; 
-   width: 70%;
+    background-color: #D9D9D9;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left:15%;
+    margin-left: 15%;
     margin-right: 15%;
 }
-@media screen and (max-width:730px){
-   .activite{
-    width:auto;
-    margin: 5%;
-}
-.texteact p{
-    font-size: 10px;
-}
-h2{
-    font-size: 15PX;
-}
-}
 
+@media screen and (max-width:730px) {
+    .activite {
+        width: auto;
+        margin: 5%;
+    }
+    
+    .texteact p {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 15PX;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    hr.traitact {
+        width: 44%;
+    }
+}
 
 .chameau {
     display: flex;
     flex-direction: row;
-   
-   
-  
 }
 
 
@@ -302,31 +292,30 @@ h2{
 
 
 }
-.texteact{
-margin: 0 50px;
 
-display: flex;
-flex-direction: column;
-justify-content: center;
+.texteact {
+    margin: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
-@media screen and (max-width:730px){
+@media screen and (max-width:730px) {
 
-    .texteact{
-        margin: 0;
-    
-        
- }
+    .texteact {
+        margin: 0 3px 0 16px;
+    }
 
-   
-    
+
+
 }
 
 .quad {
     display: flex;
     flex-direction: row-reverse;
-    
+
 }
 
 .quad img {
@@ -399,7 +388,7 @@ h6 {
     align-items: center;
 }
 
-.info-social a p{
+.info-social a p {
     color: #000000;
     margin-left: 11px;
 }
@@ -455,16 +444,17 @@ div#map {
     height: auto;
 }
 
-.contact-mobile{
+.contact-mobile {
     display: none;
 }
-@media (max-width: 431px){
+
+@media (max-width: 431px) {
     .Footer {
         flex-direction: column;
         align-items: center;
     }
 
-    .paiement{
+    .paiement {
         width: 346px;
         height: auto;
     }
@@ -482,5 +472,25 @@ div#map {
         width: 38px;
         height: 39px;
         padding: 13px;
+    }
+
+    .reglement {
+        width: 84vw;
+    }
+
+    .Nos-hotel {
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    div#map {
+        width: 400px;
+        height: 290px;
+        margin-bottom: 35px;
+    }
+
+    footer {
+        height: 599px;
     }
 }
