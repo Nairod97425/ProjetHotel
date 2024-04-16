@@ -86,7 +86,42 @@
                 </div>
             </div>
             <div class="regler">
-                <a href="#">Régler</a>
+                <a id="bouton-Paiement" href="#">Régler</a>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h2>Formulaire de paiement</h2>
+                        <form id="formulaire-paiement">
+                            <!-- Champs de formulaire pour les informations de paiement -->
+                            
+                            <div class="info-popup">
+                                <label for="nom">Nom:</label>
+                                <input class="bloc-texte" type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="info-popup">
+                                <label for="Prenom">Prenom:</label>
+                                <input class="bloc-texte" type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="info-popup">
+                                <label for="Adresse">Adresse:</label>
+                                <input class="bloc-texte" type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="info-popup">
+                                <label for="Code-postal">Code Postal:</label>
+                                <input class="bloc-texte" type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="info-popup">
+                                <label for="nom-carte">Nom sur la carte:</label>
+                                <input class="bloc-texte" type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="info-popup">
+                                <label for="numero-carte">Numéro de carte:</label>
+                                <input class="bloc-texte" type="text" id="numero-carte" name="numero-carte" required>
+                            </div>                          
+                            <input class="payer" type="submit" value="Payer">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="img-reservation">
@@ -149,6 +184,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="script.js"></script>
     <script src="script2.js"></script>
+    <script src="script3.js"></script>
 </body>
 
 </html>
