@@ -127,8 +127,7 @@ h1 {
 .porte {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 7%;
+  margin: 21px 248px;
 }
 
 .paragraph {

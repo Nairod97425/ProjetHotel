@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "JustMe" ;
+    font-family: "JustMe";
     src: url(JustMeAgainDownHere-Regular.ttf);
 }
 
 body {
     margin: 0;
-    font-family: "JustMe" ;
+    font-family: "JustMe";
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -72,9 +72,6 @@ h1 {
 
 @media (max-width: 431px) {
 
-    body{
-        border: 1px solid red;
-    }
 
     .date-de-reservation {
         width: auto;
@@ -262,8 +259,8 @@ h3 {
 
 .star {
     display: flex;
-    align-items: center;   
-    margin: -9px 0 10px 30px; 
+    align-items: center;
+    margin: -9px 0 10px 30px;
 }
 
 i.fas.fa-star {
@@ -305,7 +302,7 @@ i.fas.fa-star {
     width: 500px;
 }
 
-.Trait-chambre{
+.Trait-chambre {
     width: 11em;
     height: 2px;
     background-color: black;
@@ -329,7 +326,12 @@ h5 {
     margin: 0;
 }
 
-@media (max-width:431px){
+.star-2 {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:431px) {
     input.search__input {
         width: 19em;
     }
